@@ -276,7 +276,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1095446688}
-  m_Father: {fileID: 359018256}
+  m_Father: {fileID: 1823445629}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -326,7 +326,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 112150249}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 157082478}
+        m_TargetAssemblyTypeName: PopupBank, Assembly-CSharp
+        m_MethodName: ShowDeposit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &112150249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,6 +642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 157082477}
   - component: {fileID: 157082476}
+  - component: {fileID: 157082478}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -667,6 +680,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157082478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157082475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0da8d927f85be9b41b1de46a8902262c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  depositPanel: {fileID: 1965588992}
+  withdrawalPanel: {fileID: 1492256076}
+  deposit: {fileID: 112150246}
+  withdrawal: {fileID: 567933588}
 --- !u!1 &209995727
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,7 +778,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 209995730}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 157082478}
+        m_TargetAssemblyTypeName: PopupBank, Assembly-CSharp
+        m_MethodName: off
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &209995730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,39 +1083,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324468963}
   m_CullTransparentMesh: 1
---- !u!1 &359018255
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 359018256}
-  m_Layer: 0
-  m_Name: DW
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &359018256
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 359018255}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 112150247}
-  - {fileID: 567933589}
-  m_Father: {fileID: 1823445629}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &381847456
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,7 +1663,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 747589920}
-  m_Father: {fileID: 359018256}
+  m_Father: {fileID: 1823445629}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1705,7 +1713,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 567933591}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 157082478}
+        m_TargetAssemblyTypeName: PopupBank, Assembly-CSharp
+        m_MethodName: ShowWithdraw
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &567933591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3470,7 +3490,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1127278542}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 157082478}
+        m_TargetAssemblyTypeName: PopupBank, Assembly-CSharp
+        m_MethodName: off
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1127278542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5186,7 +5218,8 @@ Transform:
   - {fileID: 1616474114}
   - {fileID: 461696375}
   - {fileID: 1285112788}
-  - {fileID: 359018256}
+  - {fileID: 112150247}
+  - {fileID: 567933589}
   m_Father: {fileID: 530599736}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1895618237
