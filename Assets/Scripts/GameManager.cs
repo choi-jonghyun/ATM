@@ -9,10 +9,16 @@ public class GameManager : MonoBehaviour
  public UserData userData;
     private void Awake()
     {
+        if(Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
         Instance = this;
-
+        DontDestroyOnLoad(gameObject);
 
         userData = new UserData("최종현", 100000, 100000);
+
     }
 
 }
