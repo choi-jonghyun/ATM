@@ -36,26 +36,6 @@ Unity Editor 2022.3.17f1 (LTS) 이상
 
 TextMesh Pro 패키지
 
-설치 및 실행 (Getting Started)
-
-리포지토리 복제 또는 압축 해제
-
-git clone <repository-url>
-
-Unity Editor에서 프로젝트 열기
-
-Unity Hub 혹은 직접 ATM-main 폴더를 선택해 엽니다.
-
-Unity Editor 버전은 2022.3.17f1 이상을 권장합니다.
-
-씬 열기
-
-Assets/Scenes/SampleScene.unity 씬을 더블 클릭하여 엽니다.
-
-플레이 모드로 전환
-
-상단 ▶ 버튼을 눌러 플레이 모드로 진입합니다.
-
 사용법 (Usage)
 
 회원 가입
