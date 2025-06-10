@@ -34,4 +34,11 @@ public class UIManager : MonoBehaviour
     {
         Refresh();
     }
+    public void RefreshUI()
+    {
+        var data = GameManager.Instance.userData;
+        NameText.text = data.UserName;
+        CashText.text = data.Cash.ToString("N0");
+        BalanceText.text = data.Balance.ToString("N0");
+    }
 }
