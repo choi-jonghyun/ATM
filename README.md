@@ -1,3 +1,6 @@
+
+![image](https://github.com/user-attachments/assets/adee9e3a-2ae5-4efb-8032-a126377f0691)
+
 # ATM
 주요 기능 (Features)
 
