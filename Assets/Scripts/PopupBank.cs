@@ -21,6 +21,8 @@ public class PopupBank : MonoBehaviour
     public GameObject error;
     public TextMeshProUGUI errorText;
 
+    
+
 
 
     private void Start()
@@ -67,6 +69,7 @@ public class PopupBank : MonoBehaviour
             data.Balance += amount;
 
             UIManager.Instance.Refresh();
+            GameManager.Instance.SaveUserData();
 
             UpdateUIText();
         }
@@ -124,6 +127,7 @@ public class PopupBank : MonoBehaviour
             data.Balance -= amount;
 
             UIManager.Instance.Refresh();
+            GameManager.Instance.SaveUserData();
 
             UpdateUIText();
         }
